@@ -5801,4 +5801,11 @@ button.close {
   font-size: 18px;
   padding: 10px; }
 
+/*button {
+.btn-rose{
+		padding: $btn-rose-buy-padding;
+		background-color: $btn-bg-color;
+	}
+}*/
+
 /*# sourceMappingURL=main.css.map */
