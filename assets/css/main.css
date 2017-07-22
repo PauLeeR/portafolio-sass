@@ -5797,15 +5797,60 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-.dropdown-menu li > a {
-  font-size: 18px;
-  padding: 10px; }
+/*caret*/
+/*navbar responsive*/
+body {
+  width: 100%; }
 
-/*button {
-.btn-rose{
-		padding: $btn-rose-buy-padding;
-		background-color: $btn-bg-color;
-	}
-}*/
+.navbar-default {
+  background-color: transparent;
+  z-index: 1;
+  border-color: transparent;
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    padding: 13px 16px;
+    background-color: #333;
+    text-align: left;
+    color: #fff; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333333;
+    background-color: #fff; }
+
+  .navbar .navbar-nav .dropdown a .caret {
+    /*antes se veía, después se perdió el símbolo caret*/
+    top: 5px;
+    background: #e91e63;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Fontawesome;
+    height: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    width: 30px; } }
+#carousel-example-generic {
+  width: 100%; }
+
+.dropdown-menu li > a {
+  font-size: 16px;
+  padding: 10px; }
+.dropdown-menu li > .fa {
+  margin-right: 5px; }
+
+button.btn-rose {
+  padding: 13px 20px;
+  background-color: #e91e63;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 3px; }
 
 /*# sourceMappingURL=main.css.map */

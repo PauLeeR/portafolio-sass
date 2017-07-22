@@ -1,14 +1,51 @@
-.dropdown-menu{
-	li>a {
-		font-size: $icon-nav-size;
-		padding: $icon-nav-padding;
+body{
+	width: $width-total;
+}
+
+.navbar-default{
+	background-color: $barra-bg-color;
+	z-index: 1;
+	border-color: $nav-color-borde;
+	//background-attachment: scroll; 
+	width: $width-total;
+}
+
+@media (max-width: 768px){ //vista de la navbar en responsive
+
+	.navbar-default .navbar-nav > li > a{
+		padding: $padding-navbar-mobile;
+		background-color:$bg-color;
+		text-align: $txt-align; 
+		color: $color;
+	} 
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+		color: $dark-grey;
+		background-color: $white;
+	}
+
+	.navbar .navbar-nav .dropdown a .caret {
+		@include caret();
 	}
 }
 
-/*button {
-.btn-rose{
-		padding: $btn-rose-buy-padding;
-		background-color: $btn-bg-color;
+	#carousel-example-generic{
+		width: $width-total;	
 	}
-}*/
+
+	.dropdown-menu{
+		li>a {
+			font-size: $icon-nav-size;
+			padding: $icon-nav-padding;
+		}
+
+		li>.fa {
+			margin-right: 5px;
+		}
+
+	}
+
+	button.btn-rose{
+		@include boton();
+	}
 

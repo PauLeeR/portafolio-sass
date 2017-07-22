@@ -1,0 +1,28 @@
+@mixin boton(){
+	padding: 13px 20px;
+	background-color:$btn-bg-color;
+	color: #fff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: none;
+	border-radius: 3px;
+}
+
+/*caret*/
+@mixin caret(){  /*antes se veía, después se perdió el símbolo caret*/
+	top: 5px;
+	background: #e91e63;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: Fontawesome;
+	height: 30px;
+	margin-left: 0;
+	position: absolute;
+	right: 15px;
+	text-align: center;
+	width: 30px;
+}
+
