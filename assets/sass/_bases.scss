@@ -15,13 +15,22 @@ body{
     width: $width-total;
 }
 
+.navbar-default .navbar-nav > li > a{
+    padding: $padding-navbar-mobile;
+    color: $white;
+}
+
+.navbar-default .navbar-brand{
+    color: $white;
+}
+
 @media (max-width: 768px){ //vista de elementos en responsive
 
     .navbar-default .navbar-nav > li > a{
         padding: $padding-navbar-mobile;
         background-color:$bg-color;
         text-align: $txt-align; 
-        color: $color;
+        color: $white;
     } 
 
     .navbar-default .navbar-nav .open .dropdown-menu>li>a{
@@ -40,28 +49,25 @@ body{
         color:$white;
     }
 
-    h4{
-        font-weight: 700;
-        color: #3C4858;
+    .about p{
+        margin: $margin-p;
     }
 
-    p{
-        color: #999999;
-        text-align: center;
-        font-size: 16px;
-        padding-bottom: 40px;
-        margin: 30px 80px 50px;
+    .ancho{
+        width: $wide-btn;
     }
+
 }
 
 .dropdown-menu{
     li>a {
         font-size: $icon-nav-size;
         padding: $icon-nav-padding;
+        color: $white;
     }
 
     li>.fa {
-        margin-right: 5px;
+        margin-right: $sm-margin;
     }
 
 }
@@ -84,23 +90,28 @@ button.btn-rose{
     }
 
     .carousel-subtitle{
-        display: block;
-        margin: 10px 0 60px;
-        font-size: 16px;
+        display: $block;
+        margin: $mgn-sbtle;
+        font-size: $icon-nav-size;
+        color: $white;
     }
 }
 
 .carousel-caption{
-    top: 200px;
+    top: $lg-top;
 }
 
 /*section characteristics*/
+.characteristics{
+    padding-bottom: $padding-bottom;
+}
+
 .section-title {
     font-size: 18px;
-    color: #999;
+    color: $other-grey;
     line-height: 26px;
-    padding-top: 100px;
-    margin-bottom: 50px;
+    padding-top: $padding-top;
+    margin-bottom: $padding-bottom;
 }
 
 /*
@@ -113,8 +124,8 @@ button.btn-rose{
 }
 */
 .iconcontainer {
-    text-align: center;
-    padding-top: 20px;
+    text-align: $align;
+    padding-top: $icon-bottom-padding;
 }
 
 .iconbox-icon{
@@ -134,12 +145,43 @@ button.btn-rose{
 }
 
 h4{
-        font-weight: 700;
-        color: #3C4858;
-    }
+    font-weight: $weight-title;
+    color: $another-grey;
+}
 
 p{
-    color: #999999;
-    text-align: center;
+    color: $other-grey;
+    text-align: $align;
+
+}
+
+/*about*/
+.about{
+    background-image: url(https://demot-vertigostudio.netdna-ssl.com/hestia-pro/wp-content/uploads/sites/92/2016/10/city-bg-reupload.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    opacity: 0.9;
+    padding: 70px 0 30px;
+}
+
+.about {
+
+    h1{
+        color: $white;
+        padding-top: $padding-top-about;
+        font-weight: $weight-title;
+    }
+
+    p{
+        font-size: $font-sz-p-about;
+        line-height: $line-hgt-p-about;
+        color: $whitey;
+        text-align: $w-align;
+    }
+
+    iframe{
+        padding-top: $padding-bottom;
+        border: 1px solid $whitey;
+    }
 
 }
