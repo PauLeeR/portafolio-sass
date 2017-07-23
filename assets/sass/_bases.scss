@@ -61,6 +61,10 @@ body{
         width: $wide-btn;
     }
 
+    .white-card{
+        margin-bottom: 80px;
+    }
+
 }
 
 .dropdown-menu{
@@ -171,15 +175,37 @@ p{
 
 /*about*/
 .about{
-    background-image: url(https://demot-vertigostudio.netdna-ssl.com/hestia-pro/wp-content/uploads/sites/92/2016/10/city-bg-reupload.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    opacity: 0.9;
-    padding: 70px 0 30px;
+    background-image: url(../img/img_city.jpg);
+    @include about();
 }
 
+/*.about:after{  //no me funciona la imagen de fondo más oscura
+    background-color: rgba(0,0,0,.7);
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}*/
+/*
+#about-us{
+    background-color: rgba(0, 0, 0, 0.8);
+    content: "";
+    display: block;
+    position: absolute;
+    /* Todas las posiciones a cero 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+*/
 .about {
-
     h1{
         color: $white;
         padding-top: $padding-top-about;
@@ -201,17 +227,18 @@ p{
 }
 
 .products{
+
+    background-color: $other-white;
+    margin-top: $margin-top0;
+
     .container-products{
         padding: 120px;
     }
 
     .col-md-12 {
         padding-bottom: 80px;
-        margin-top: -25px;
+        margin-top: $margin-top1;
     }
-
-    background-color: #f4f2f2;
-    margin-top: -18px;
 
     .white-card {
         @include white-card();
@@ -219,16 +246,39 @@ p{
         img {
             border-radius: $sm-margin;
             border: $no-border;
-            margin-top: -40px;
+            margin-top: $margin-top2;
             //box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
             @include shadow-products();
             transition: all .2s ease-in-out;
         }
         img:hover {
             cursor: pointer;
-            margin-top: -55px;
+            margin-top: $margin-top3;
             @include shadow-products();
         }
+    }
+
+    .category{
+        @include product-category();
+    }
+
+    .product{
+        color: $another-dark-grey;
+        font-weight: $weight-title;
+    }
+
+    .product-description {
+        margin: 13px 0px 13px;
+        line-height: $line-hgt-p-about;
+    }
+
+    .pound{
+        padding-left: $icon-bottom-padding;
+        font-size: $font-sz-p-about;
+    }
+
+    .fa{
+        font-size: $font-sz-p-about;
     }
 
     /*h5 {
