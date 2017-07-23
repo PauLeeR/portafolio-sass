@@ -1,51 +1,145 @@
 body{
-	width: $width-total;
+    width: $width-total;
 }
 
-.navbar-default{
-	background-color: $barra-bg-color;
-	z-index: 1;
-	border-color: $nav-color-borde;
-	//background-attachment: scroll; 
-	width: $width-total;
+/*.header{
+    position: absolute;
+    }*/
+
+    /*navbar*/
+    .navbar-default{
+        background-color: $barra-bg-color;
+        z-index: 1;
+        border-color: $nav-color-borde;
+    //background-attachment: scroll; 
+    width: $width-total;
 }
 
-@media (max-width: 768px){ //vista de la navbar en responsive
+@media (max-width: 768px){ //vista de elementos en responsive
 
-	.navbar-default .navbar-nav > li > a{
-		padding: $padding-navbar-mobile;
-		background-color:$bg-color;
-		text-align: $txt-align; 
-		color: $color;
-	} 
+    .navbar-default .navbar-nav > li > a{
+        padding: $padding-navbar-mobile;
+        background-color:$bg-color;
+        text-align: $txt-align; 
+        color: $color;
+    } 
 
-	.navbar-default .navbar-nav .open .dropdown-menu>li>a{
-		color: $dark-grey;
-		background-color: $white;
-	}
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: $dark-grey;
+        background-color: $white;
+    }
 
-	.navbar .navbar-nav .dropdown a .caret {
-		@include caret();
-	}
+    .navbar .navbar-nav .dropdown a .caret {
+        @include caret();
+    }
+
+    .carousel h1.carousel-title{
+        margin: $margin-title;
+        font-size: $size-title;
+        font-weight: $weight-title;
+        color:$white;
+    }
+
+    h4{
+        font-weight: 700;
+        color: #3C4858;
+    }
+
+    p{
+        color: #999999;
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 40px;
+        margin: 30px 80px 50px;
+    }
 }
 
-	#carousel-example-generic{
-		width: $width-total;	
-	}
+.dropdown-menu{
+    li>a {
+        font-size: $icon-nav-size;
+        padding: $icon-nav-padding;
+    }
 
-	.dropdown-menu{
-		li>a {
-			font-size: $icon-nav-size;
-			padding: $icon-nav-padding;
-		}
+    li>.fa {
+        margin-right: 5px;
+    }
 
-		li>.fa {
-			margin-right: 5px;
-		}
+}
 
-	}
+button.btn-rose{
+    @include boton();
+}
 
-	button.btn-rose{
-		@include boton();
-	}
+/*carrusel*/
 
+#carousel-example-generic{
+    width: $width-total;
+    //position: absolute;   
+}
+
+.carousel-inner {
+    .carousel-title{
+        color: $white;
+        @include titulo-carrusel(); 
+    }
+
+    .carousel-subtitle{
+        display: block;
+        margin: 10px 0 60px;
+        font-size: 16px;
+    }
+}
+
+.carousel-caption{
+    top: 200px;
+}
+
+/*section characteristics*/
+.section-title {
+    font-size: 18px;
+    color: #999;
+    line-height: 26px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+/*
+.section-subtitle {
+    font-size: 18px;
+    color: #3C4858;
+    line-height: 26px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+*/
+.iconcontainer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.iconbox-icon{
+    padding-bottom: $icon-bottom-padding;
+}
+
+.icon-one{
+    color: $btn-bg-color;
+}
+
+.icon-two{
+    color: $icon-2;
+}
+
+.icon-three{
+    color: $icon-3;
+}
+
+h4{
+        font-weight: 700;
+        color: #3C4858;
+    }
+
+p{
+    color: #999999;
+    text-align: center;
+
+}

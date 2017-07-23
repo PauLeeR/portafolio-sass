@@ -1,5 +1,5 @@
 @import 'assets/stylesheets/_bootstrap.scss';
 @import '_variables.scss';
-@import '_mixin.scss';  //si no se pone en este orden, no toma los estilos, me tomó unos minutos darme cuenta XD
+@import '_mixin.scss';  //si no se pone en el orden correcto, no toma los estilos, me tomó unos minutos darme cuenta XD
 @import '_navbar.scss';
 @import '_bases.scss';
