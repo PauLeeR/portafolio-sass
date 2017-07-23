@@ -191,7 +191,7 @@ p{
     width: 100%;
     height: 100%;
     content: "";
-}*/
+    }*/
 /*
 #about-us{
     background-color: rgba(0, 0, 0, 0.8);
@@ -230,6 +230,7 @@ p{
 
     background-color: $other-white;
     margin-top: $margin-top0;
+    padding: 65px 5px 70px;
 
     .container-products{
         padding: 120px;
@@ -283,5 +284,71 @@ p{
 
     /*h5 {
         color: gray;
-    }*/
+        }*/
+    }
+
+    #portofolio{
+        h1{
+         color: $another-dark-grey;
+         padding-top: $padding-ptfl;
+         font-weight: $weight-title;
+     }
+
+     h4{
+        font-size: $icon-nav-size;
+        padding-bottom: $padding-bottom;
+        padding-top: $line-hgt-p-about;
+        font-weight: $weight-normal;
+    }
 }
+
+.portfolio { //fotos del portafolio
+    .borde {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: $padding-bottom;
+        border-radius: $sm-margin;
+        //width: $width-total;
+        @include img-ptf();
+    }
+    .container {
+        position: relative;
+    }
+
+    .middle{
+        @include txt-hover-ptf();
+    }
+
+    .container:hover .borde {
+      opacity: 5;
+  }
+
+  .container:hover .middle {
+      opacity: 4;
+  }
+
+  .text {
+      background-color: $color-hover1;
+      color: $white;
+      padding: 5px 12px;
+      border-radius: $radio1;
+      font-size: $icon-nav-padding;
+      text-transform: $may;
+      font-weight: $weight-title;
+  }
+
+  .darkpink{
+    background-color: $btn-bg-color;
+  }
+  .light-blue{
+    background-color: $icon-2;
+  }
+
+  .card-title{
+    color: $white;
+    font-size: 19px;
+    font-weight: $weight-title;
+    width: 100%;
+  }
+
+}
+
