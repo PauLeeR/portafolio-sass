@@ -31,3 +31,17 @@
 	font-size: 50px;
 	font-weight: 700;
 }
+
+@mixin shadow-products() {
+	-webkit-box-shadow: 2px 2px 23px 0px rgba(50, 50, 50, 0.61);
+	-moz-box-shadow: 2px 2px 23px 0px rgba(50, 50, 50, 0.61);
+	box-shadow: 2px 2px 23px 0px rgba(50, 50, 50, 0.61);
+}
+
+@mixin white-card(){
+	padding: 15px;
+	background-color: $whitey;
+	border: none;
+	margin-left: 20px;
+	border-radius: 5px;
+}
