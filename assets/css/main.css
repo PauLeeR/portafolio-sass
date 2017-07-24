@@ -5948,7 +5948,7 @@ button.btn-rose {
 
 h4 {
   font-weight: 700;
-  color: #3C4858; }
+  color: #3c4858; }
 
 p {
   color: #999;
@@ -6005,10 +6005,7 @@ p {
 .products {
   background-color: #f4f2f2;
   margin-top: -18px;
-  padding: 65px 5px 70px;
-  /*h5 {
-      color: gray;
-      }*/ }
+  padding: 65px 5px 70px; }
   .products .container-products {
     padding: 120px; }
   .products .col-md-12 {
@@ -6101,5 +6098,54 @@ p {
   font-size: 19px;
   font-weight: 700;
   width: 100%; }
+
+.team h1 {
+  color: #3c4858;
+  padding-top: 70px;
+  font-weight: 700; }
+.team h4 {
+  font-size: 16px;
+  padding-bottom: 50px;
+  padding-top: 26px;
+  font-weight: normal; }
+.team .team-members {
+  margin-bottom: 50px; }
+.team .social {
+  margin: 10px 1px; }
+.team .fa {
+  padding-right: 16px; }
+.team .fa-facebook {
+  color: #3B5998; }
+.team .fa-twitter {
+  color: #55ACEE; }
+.team .fa-linkedin {
+  color: #0976B4; }
+.team .fa-dribbble {
+  color: #F18BB3; }
+.team .fa-pinterest {
+  color: #CC2127; }
+.team .fa-github-square {
+  color: #333333; }
+.team .fa-google-plus {
+  color: #DF5544; }
+.team .team-members img {
+  border-radius: 5px; }
+.team .team-members h4 {
+  color: #3c4858;
+  padding-bottom: 5px;
+  font-weight: 700; }
+.team .team-members p {
+  text-align: left; }
+
+.container-prices {
+  padding: 70px 65px 60px;
+  background-color: #f0f0f0; }
+  .container-prices .btn-danger {
+    background-color: #e91e63; }
+  .container-prices h1 {
+    font-weight: 700;
+    padding-bottom: 26px; }
+  .container-prices span {
+    font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
