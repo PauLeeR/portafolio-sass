@@ -183,7 +183,7 @@ p{
 
 }
 
-/*about*/
+/*seccion about*/
 .about{
     background-image: url(../img/img_city.jpg);
     @include about();
@@ -191,47 +191,21 @@ p{
     z-index: 1;
 }
 
-.dark-bg{
-    position: absolute;
+/*.dark-bg{      //había creado esta clase para darle fondo oscuro a las img pero el absolute afectó al carrusel, y no supe cómo arreglarlo
+    position: absolute;  //por lo que edité las img
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.8);
     z-index: 2;
-}
-
-#about-us{
-    position: relative;
-    z-index: 999
-}
-
-/*.about:after{  //no me funciona la imagen de fondo más oscura
-    background-color: rgba(0,0,0,.7);
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
     }*/
-/*
-#about-us{
-    background-color: rgba(0, 0, 0, 0.8);
-    content: "";
-    display: block;
-    position: absolute;
-    /* Todas las posiciones a cero 
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-*/
+
+    #about-us{
+        position: relative;
+        z-index: 999
+    }
+
 .about { //seccion nosotros-about us
     h1{
         color: $white;
@@ -296,22 +270,23 @@ p{
     }
 }
 
-#portofolio{
+/*seccion portafolio*/
+#portofolio {
     h1{
-     color: $another-dark-grey;
-     padding-top: $padding-ptfl;
-     font-weight: $weight-title;
- }
+        color: $another-dark-grey;
+        padding-top: $padding-ptfl;
+        font-weight: $weight-title;
+    }
 
- h4{
-    font-size: $icon-nav-size;
-    padding-bottom: $padding-bottom;
-    padding-top: $line-hgt-p-about;
-    font-weight: $weight-normal;
-}
+    h4 {
+        font-size: $icon-nav-size;
+        padding-bottom: $padding-bottom;
+        padding-top: $line-hgt-p-about;
+        font-weight: $weight-normal;
+    }
 }
 
-.portfolio { //fotos del portafolio
+.portfolio { //fotos del portafolio, estaba el hover pero ahora se saliò , desconozco el motivo
     .borde {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: $padding-bottom;
@@ -362,6 +337,7 @@ p{
     }
 }
 
+/*seccion nuestro team*/
 .team {
     h1{
         color: $another-dark-grey;
@@ -427,8 +403,8 @@ p{
     } 
 }
 
+/*seccion prices*/
 .container-prices{
-
     padding: 70px 65px 60px;
     background-color: $light-grey;
 
@@ -446,6 +422,7 @@ p{
     }
 }
 
+/*seccion nuestros clientes*/
 .clients{
     padding: 65px 5px 70px;
 
@@ -483,6 +460,7 @@ p{
     }
 }
 
+/*Seccion subscríbete*/
 .newsletter{
     background: url(../img/about.jpg);
     background-repeat: no-repeat;
@@ -553,3 +531,170 @@ p{
         padding-bottom: 50px;
     }
 }
+
+/*seccion contactanos*/
+.contact{
+    background: url(../img/img_city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    $icon-bottom-padding: 30px;
+    padding: 70px 120px;
+    position: relative;
+    z-index: 1;
+
+    .white{
+        color: $white;
+    }
+
+    h1{
+        color: $white;
+        padding-top: $padding-ptfl;
+        font-weight: $weight-title;
+    }
+
+    h4{
+        color: $white;
+    }
+
+    p{
+        color: $light-grey;
+        font-weight: $weight-normal;
+        margin-top: $icon-bottom-padding; 
+    }
+
+    .us{
+        text-align: center;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+
+    /*formulario contáctanos*/
+    .group {
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 5px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    label {
+        color: #fff;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #fff;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    /* HIGHLIGHTER */
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS  */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #fff;
+        }
+
+        to {
+            width: 0;
+            background: transparent;
+        }
+    } 
+
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #fff;
+        }
+
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @keyframes inputHighlighter {
+        from {
+            background: #fff;
+        }
+
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    #panel {
+        border: 1px solid $white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+        border-radius: 4px;
+        top: 50px;
+    }
+}
+
+

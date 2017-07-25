@@ -5960,7 +5960,7 @@ p {
   color: #999999;
   text-align: center; }
 
-/*about*/
+/*seccion about*/
 .about {
   background-image: url(../img/img_city.jpg);
   background-attachment: fixed;
@@ -5971,45 +5971,19 @@ p {
   position: relative;
   z-index: 1; }
 
-.dark-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 2; }
-
+/*.dark-bg{      //había creado esta clase para darle fondo oscuro a las img pero el absolute afectó al carrusel, y no supe cómo arreglarlo
+    position: absolute;  //por lo que edité las img
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 2;
+    }*/
 #about-us {
   position: relative;
   z-index: 999; }
 
-/*.about:after{  //no me funciona la imagen de fondo más oscura
-    background-color: rgba(0,0,0,.7);
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    }*/
-/*
-#about-us{
-    background-color: rgba(0, 0, 0, 0.8);
-    content: "";
-    display: block;
-    position: absolute;
-    /* Todas las posiciones a cero 
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-*/
 .about h1 {
   color: white;
   padding-top: 60px;
@@ -6059,6 +6033,7 @@ p {
   .products .fa {
     font-size: 18px; }
 
+/*seccion portafolio*/
 #portofolio h1 {
   color: #3c4858;
   padding-top: 70px;
@@ -6110,6 +6085,7 @@ p {
   font-weight: 700;
   width: 100%; }
 
+/*seccion nuestro team*/
 .team h1 {
   color: #3c4858;
   padding-top: 70px;
@@ -6148,6 +6124,7 @@ p {
 .team .team-members p {
   text-align: left; }
 
+/*seccion prices*/
 .container-prices {
   padding: 70px 65px 60px;
   background-color: #f0f0f0; }
@@ -6159,6 +6136,7 @@ p {
   .container-prices span {
     font-weight: 700; }
 
+/*seccion nuestros clientes*/
 .clients {
   padding: 65px 5px 70px; }
   .clients h1 {
@@ -6185,6 +6163,7 @@ p {
   .clients p {
     color: #999999; }
 
+/*Seccion subscríbete*/
 .newsletter {
   background: url(../img/about.jpg);
   background-repeat: no-repeat;
@@ -6236,5 +6215,118 @@ p {
   font-weight: lighter;
   padding-top: 26px;
   padding-bottom: 50px; }
+
+/*seccion contactanos*/
+.contact {
+  background: url(../img/img_city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 120px;
+  position: relative;
+  z-index: 1;
+  /*formulario contáctanos*/
+  /* active state */
+  /* HIGHLIGHTER */
+  /* active state */
+  /* ANIMATIONS  */ }
+  .contact .white {
+    color: white; }
+  .contact h1 {
+    color: white;
+    padding-top: 70px;
+    font-weight: 700; }
+  .contact h4 {
+    color: white; }
+  .contact p {
+    color: #f0f0f0;
+    font-weight: normal;
+    margin-top: 30px; }
+  .contact .us {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff; }
+  .contact .group {
+    position: relative;
+    margin-bottom: 35px; }
+  .contact input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent; }
+  .contact input:focus {
+    outline: none; }
+  .contact label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  .contact input:focus ~ label, .contact input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #fff; }
+  .contact .bar {
+    position: relative;
+    display: block;
+    width: 100%; }
+  .contact .bar:before, .contact .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #fff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  .contact .bar:before {
+    left: 50%; }
+  .contact .bar:after {
+    right: 50%; }
+  .contact input:focus ~ .bar:before, .contact input:focus ~ .bar:after {
+    width: 50%; }
+  .contact .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5; }
+  .contact input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease; }
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #fff; }
+  to {
+    width: 0;
+    background: transparent; } }
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #fff; }
+  to {
+    width: 0;
+    background: transparent; } }
+@keyframes inputHighlighter {
+  from {
+    background: #fff; }
+  to {
+    width: 0;
+    background: transparent; } }
+  .contact #panel {
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    border-radius: 4px;
+    top: 50px; }
 
 /*# sourceMappingURL=main.css.map */
