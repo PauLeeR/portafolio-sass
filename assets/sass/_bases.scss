@@ -565,10 +565,10 @@ p{
     .us{
         text-align: center;
         margin-bottom: 50px;
-        color: #fff;
+        color: $white;
     }
 
-    /*formulario contáctanos*/
+    /*formulario contáctanos, snippet de bootstrap, por eso está sin Sass*/
     .group {
         position: relative;
         margin-bottom: 35px;
@@ -698,3 +698,59 @@ p{
 }
 
 
+footer{
+    background-color: $dark-grey;
+    padding: 30px 0px 20px;
+}
+
+.izq{
+    text-align: $alig-l;
+}
+
+.der{
+    padding-right: 6px;
+}
+
+footer h5{
+    color: $white;
+    font-weight: $weight-title;
+    font-size: 20px;
+    text-align: $alig-l;
+    padding-bottom: 20px;
+}
+
+footer i{
+    color: $white;
+}
+
+footer a{
+    text-decoration: $none;
+    text-transform: $none;
+    color: $light-grey;
+    margin-right: 6px;
+    letter-spacing: -1px;
+    word-break: break-word; //Acorta la línea para que no tope con la siguiente col 4
+}
+
+footer a:hover{
+    text-decoration: $none;
+    color: $btn-bg-color;
+}
+
+.espacio{
+    margin-top: $other-font-sz;
+}
+
+footer hr{
+    border-color: rgba(255,255,255,.2);
+    margin-bottom: $other-font-sz;
+}
+
+.conpadding {
+    color: $light-grey;
+    padding: 15px 0;
+}
+
+footer h6{
+    float: right !important;
+}    

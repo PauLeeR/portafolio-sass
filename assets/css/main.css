@@ -5803,6 +5803,11 @@ button.close {
 /*p sección about*/
 /*boton toggle responsive mas ancho*/
 /*subtitle*/
+/*nav.shrink{ //estilos para la barra scroll pero no me funcionó
+	background-color: rgb(0,0,0,0.5);
+	height: 60px;
+	padding-top: 0px;
+}*/
 body {
   width: 100%; }
 
@@ -6224,7 +6229,7 @@ p {
   padding: 70px 120px;
   position: relative;
   z-index: 1;
-  /*formulario contáctanos*/
+  /*formulario contáctanos, snippet de bootstrap, por eso está sin Sass*/
   /* active state */
   /* HIGHLIGHTER */
   /* active state */
@@ -6244,7 +6249,7 @@ p {
   .contact .us {
     text-align: center;
     margin-bottom: 50px;
-    color: #fff; }
+    color: white; }
   .contact .group {
     position: relative;
     margin-bottom: 35px; }
@@ -6328,5 +6333,51 @@ p {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
     border-radius: 4px;
     top: 50px; }
+
+footer {
+  background-color: #333333;
+  padding: 30px 0px 20px; }
+
+.izq {
+  text-align: left; }
+
+.der {
+  padding-right: 6px; }
+
+footer h5 {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 20px; }
+
+footer i {
+  color: white; }
+
+footer a {
+  text-decoration: none;
+  text-transform: none;
+  color: #f0f0f0;
+  margin-right: 6px;
+  letter-spacing: -1px;
+  word-break: break-word; }
+
+footer a:hover {
+  text-decoration: none;
+  color: #e91e63; }
+
+.espacio {
+  margin-top: 20px; }
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px; }
+
+.conpadding {
+  color: #f0f0f0;
+  padding: 15px 0; }
+
+footer h6 {
+  float: right !important; }
 
 /*# sourceMappingURL=main.css.map */
